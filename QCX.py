@@ -44,7 +44,7 @@ def path_to_eagertensor(image_path):
 
 st.markdown("<h1 style='text-align: center; color: black ; font-size: 25px ;'>Sakhon QCX</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><em>Good quality  Good using</em></h1>", unsafe_allow_html=True)
-img_file = st.file_uploader("เปิดไฟล์ภาพ")
+img_file = st.file_uploader("เปิดไฟล์ภาพ", type='jpg')
 
 
 
