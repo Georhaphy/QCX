@@ -10,11 +10,11 @@ from PIL import Image
 
 import numpy as np
 #import cv2
-#import tensorflow as tf
-#from tensorflow.keras.models import load_model
-#from tensorflow.keras.preprocessing.image import load_img
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import load_img
 
-#model = load_model('best_modelqc1.h5')
+model = load_model('best_modelqc1.h5')
 
 
 
