@@ -60,7 +60,8 @@ if img_file is not None:
     
     #img= np.asarray(im).astype(np.float32) /255.0 
     #image= cv2.resize(img,(256, 256))
-    image = path_to_eagertensor(img_file)
+    data = img_file.read()
+    image = path_to_eagertensor(data)
     X_submission = np.array(image)
     y = np.expand_dims(X_submission, 0)
     
