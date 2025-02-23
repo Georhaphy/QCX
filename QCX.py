@@ -6,7 +6,7 @@ Created on Sat Feb  8 17:13:37 2025
 """
 
 import streamlit as st 
-#from PIL import Image
+from PIL import Image
 
 import numpy as np
 #import cv2
