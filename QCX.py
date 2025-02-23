@@ -36,7 +36,7 @@ def path_to_eagertensor(image_path):
     raw = tf.io.read_file(image_path)
     image = tf.image.decode_jpeg(raw, channels=3)
     image = tf.cast(image, tf.float32) / 255.0
-    image = tf.image.resize(image, (image_height, image_width))
+    image = tf.image.resize(image, (256, 256))
     
     return image
 
@@ -60,7 +60,7 @@ if img_file is not None:
     
     #img= np.asarray(im).astype(np.float32) /255.0 
     #image= cv2.resize(img,(256, 256))
-    image = path_to_eagertensor(im)
+    image = path_to_eagertensor(img_file)
     X_submission = np.array(image)
     y = np.expand_dims(X_submission, 0)
     
