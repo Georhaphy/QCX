@@ -54,7 +54,7 @@ if img_file is not None:
     img = Image.open(img_file)
     img = np.array(img)
     image = tf.cast(img, tf.float32) / 255.0
-    image = tf.image.resize(image, (256, 256))
+    image = tf.image.resize(image, (128, 128))
     X_submission = np.array(image)
     y = np.expand_dims(X_submission, 0)
     
